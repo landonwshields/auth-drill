@@ -4,7 +4,10 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/gClassified'
+    connection: {
+      host: 'localhost',
+      database: 'my_user'
+    }
   },
 
   staging: {
